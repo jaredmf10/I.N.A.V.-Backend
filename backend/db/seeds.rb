@@ -12,5 +12,5 @@ u1 = User.create(name: "Brian")
 u2 = User.create(name: "Jared")
 u2 = User.create(name: "Dutch")
 
-d1 = Destination.create(name: "Tahiti", description: "We just need some muneh", region: "North America", country: "Merica", category: "Middle Of Nowhere")
-d2 = Destination.create(name: "New York", description: "It looks better than it smells", region: "North America", country: "USA", category: "Mega City")
+d1 = Destination.create(name: "Empire State Building", description: "We just need some muneh", region: "North America", country: "USA", category: "Middle Of Nowhere")
+d2 = Destination.create(name: "Statue of Liberty", description: "It looks better than it smells", region: "North America", country: "USA", category: "Mega City")
