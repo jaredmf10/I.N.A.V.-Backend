@@ -5,6 +5,7 @@ class CreatePostcards < ActiveRecord::Migration[6.0]
       t.string :image
       t.integer :destination_id
       t.integer :user_id
+      t.string :font
 
       t.timestamps
     end
