@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   resources :users
   resources :destinations
   resources :postcards
+  # get "/countries", to: "destinations#countries"
+  get "/cities", to: "destinations#cities"
 end
