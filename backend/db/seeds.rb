@@ -9,9 +9,9 @@ User.destroy_all
 Destination.destroy_all
 Postcard.destroy_all
 
-u1 = User.create(name: "Brian")
-u2 = User.create(name: "Jared")
-u2 = User.create(name: "Dutch")
+u1 = User.create(name: "Brian", password_digest: "theguy")
+u2 = User.create(name: "Jared", password_digest: 1234)
+u2 = User.create(name: "Dutch", password_digest: 1234)
 
 d1 = Destination.create(name: "Tahiti", description: "We just need some muneh", region: "North America", country: "America", category: "Middle Of Nowhere")
 d2 = Destination.create(name: "New York", description: "It looks better than it smells", region: "North America", country: "America", category: "Mega City")

@@ -18,7 +18,11 @@ class UsersController < ActionController::API
 
     def create
         user = user.create(user_params)
-        render json: user, except: [:created_at, :updated_at]
+        if user.valid?
+            render json: user, except: [:created_at, :updated_at], status: :accepted
+        else
+            render json: { errors: user.errors.full_messages }, status: :not_acceptable
+        end
     end
 
     def delete
