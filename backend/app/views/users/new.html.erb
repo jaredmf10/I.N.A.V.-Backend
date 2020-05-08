@@ -1,0 +1,13 @@
+<h1> WELCOME TO "I.N.A.V." </h1>
+<h2>I Need A Vacation </h2>
+<h3> Sign up </h3>
+
+<%= form_for @user do |f| %>
+<%= f.label :name, "Name:" %>
+<%= f.text_field :name %>
+
+<%= f.label :password %>
+<%= f.password_field :password %>
+
+<%= f.submit %>
+<% end %>

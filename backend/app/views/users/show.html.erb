@@ -1,0 +1,8 @@
+<h1>Welcome <%= @user.name %></h1>
+
+<%= button_to "Logout", logout_path, :method => :delete, data: {confirm: "Are you sure?" }%>
+<br>
+<% if current_user == @user %>
+<%= button_to "Delete User Account", @user, :method => :delete, data: {confirm: "Are you sure?"}%><br>
+<% end %>
+<br>
